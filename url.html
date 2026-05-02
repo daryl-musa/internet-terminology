@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uniform Resource Locators — Internet Terminology</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="hero">
+      <div class="hero-tag">Internet Terminology</div>
+      <h1><span class="highlight">Uniform Resource Locators</span></h1>
+      <p>A URL (Uniform Resource Locator) is a reference to a web resource that specifies its location and the protocol used to retrieve it — the address you type into a browser's address bar.</p>
+    </div>
+    <div class="content">
+      <div class="term-card">
+        <div class="term-card-header">
+          <div class="term-icon" style="background:rgba(251,113,133,0.15);">📎</div>
+          <div>
+            <h2>Uniform Resource Locators</h2>
+            <div class="term-abbr">URL — WEB ADDRESS STANDARD</div>
+          </div>
+        </div>
+        <div class="term-body">
+          <div class="term-img">
+            <svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="700" height="220" fill="#111827"/>
+  <rect x="40" y="80" width="620" height="60" rx="10" fill="#0d1b33" stroke="#1e3a5f" stroke-width="1.5"/>
+  <!-- URL parts -->
+  <text x="60"  y="116" fill="#10b981" font-family="monospace" font-size="15" font-weight="bold">https</text>
+  <text x="130" y="116" fill="#64748b" font-family="monospace" font-size="15">://</text>
+  <text x="162" y="116" fill="#00d4ff" font-family="monospace" font-size="15" font-weight="bold">www.example</text>
+  <text x="332" y="116" fill="#a78bfa" font-family="monospace" font-size="15" font-weight="bold">.com</text>
+  <text x="386" y="116" fill="#f59e0b" font-family="monospace" font-size="15" font-weight="bold">/path</text>
+  <text x="450" y="116" fill="#fb7185" font-family="monospace" font-size="15" font-weight="bold">/page</text>
+  <text x="514" y="116" fill="#fcd34d" font-family="monospace" font-size="15" font-weight="bold">?q=term</text>
+  <!-- labels below -->
+  <line x1="85"  y1="142" x2="85"  y2="158" stroke="#10b981" stroke-width="1"/>
+  <text x="85"  y="170" text-anchor="middle" fill="#10b981"  font-family="monospace" font-size="8">Protocol</text>
+  <line x1="240" y1="142" x2="240" y2="158" stroke="#00d4ff" stroke-width="1"/>
+  <text x="240" y="170" text-anchor="middle" fill="#00d4ff"  font-family="monospace" font-size="8">Domain</text>
+  <line x1="350" y1="142" x2="350" y2="158" stroke="#a78bfa" stroke-width="1"/>
+  <text x="350" y="170" text-anchor="middle" fill="#a78bfa"  font-family="monospace" font-size="8">TLD</text>
+  <line x1="415" y1="142" x2="415" y2="158" stroke="#f59e0b" stroke-width="1"/>
+  <text x="415" y="170" text-anchor="middle" fill="#f59e0b"  font-family="monospace" font-size="8">Path</text>
+  <line x1="548" y1="142" x2="548" y2="158" stroke="#fcd34d" stroke-width="1"/>
+  <text x="548" y="170" text-anchor="middle" fill="#fcd34d"  font-family="monospace" font-size="8">Query</text>
+  <text x="350" y="210" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">Anatomy of a Uniform Resource Locator (URL)</text>
+</svg>
+          </div>
+          <p class="img-caption">Anatomy of a URL — protocol, domain, TLD, path, and query string</p>
+          <h3>What is a URL?</h3><p>A Uniform Resource Locator (URL) is a standardised address for resources on the Internet. It was defined by Tim Berners-Lee as part of the Web's original architecture. Every web page, image, video, and API endpoint has a unique URL that identifies its location and how to access it.</p><h3>Structure of a URL</h3><p>A URL consists of several parts: the scheme (e.g., https://), the host (domain name or IP address), an optional port number (:8080), the path (/folder/page.html), an optional query string (?key=value), and an optional fragment (#section). Each part serves a specific purpose in locating the resource.</p><h3>URL vs URI vs URN</h3><p>A URI (Uniform Resource Identifier) is the broadest category — it identifies a resource. A URL is a URI that also specifies how to access it (location + protocol). A URN (Uniform Resource Name) identifies a resource by name regardless of location (e.g., ISBN numbers).</p><h3>URL Encoding</h3><p>URLs can only contain certain characters. Special characters (spaces, &, =, #) must be percent-encoded — replaced by % followed by their hexadecimal ASCII code. For example, a space becomes %20. This ensures URLs are transmitted correctly over HTTP.</p><h3>Best Practices</h3><p>Well-designed URLs are human-readable, stable, and descriptive. Search engines use URL structure as a ranking signal. Best practices include using hyphens (not underscores) between words, lowercase letters, meaningful path segments, and avoiding unnecessary parameters.</p>
+          <div class="tags"><span class="tag tag-blue">URI</span><span class="tag tag-purple">Scheme</span><span class="tag tag-blue">Domain</span><span class="tag tag-amber">Query String</span></div>
+        </div>
+      </div>
+      <footer>&copy; 2024 Internet Terminology Reference &nbsp;·&nbsp; <a href="../index.html" style="color:var(--accent);text-decoration:none;">← Back to All Terms</a></footer>
+    </div>
+  </div>
+  <script src="../nav.js"></script>
+</body>
+</html>
