@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multitier Architecture — Internet Terminology</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="hero">
+      <div class="hero-tag">Internet Terminology</div>
+      <h1><span class="highlight">Multitier Architecture</span></h1>
+      <p>Multitier (or n-tier) architecture is a client-server software design pattern where application logic is separated into distinct layers — each with a specific role — improving scalability, security, and maintainability.</p>
+    </div>
+    <div class="content">
+      <div class="term-card">
+        <div class="term-card-header">
+          <div class="term-icon" style="background:rgba(124,58,237,0.15);">🏗️</div>
+          <div>
+            <h2>Multitier Architecture</h2>
+            <div class="term-abbr">N-TIER / THREE-TIER CLIENT-SERVER ARCHITECTURE</div>
+          </div>
+        </div>
+        <div class="term-body">
+          <div class="term-img">
+            <svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg">
+  <rect width="700" height="220" fill="#111827"/>
+  <!-- tier boxes -->
+  <rect x="60"  y="30" width="160" height="60" rx="8" fill="#00d4ff" fill-opacity="0.1" stroke="#00d4ff" stroke-width="1.5"/>
+  <rect x="270" y="30" width="160" height="60" rx="8" fill="#7c3aed" fill-opacity="0.1" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="480" y="30" width="160" height="60" rx="8" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="140" y="55"  text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="10" font-weight="bold">Presentation</text>
+  <text x="140" y="70"  text-anchor="middle" fill="#64748b" font-family="monospace" font-size="8">Tier 1 — Browser/UI</text>
+  <text x="350" y="55"  text-anchor="middle" fill="#a78bfa" font-family="monospace" font-size="10" font-weight="bold">Application</text>
+  <text x="350" y="70"  text-anchor="middle" fill="#64748b" font-family="monospace" font-size="8">Tier 2 — Business Logic</text>
+  <text x="560" y="55"  text-anchor="middle" fill="#fcd34d" font-family="monospace" font-size="10" font-weight="bold">Data</text>
+  <text x="560" y="70"  text-anchor="middle" fill="#64748b" font-family="monospace" font-size="8">Tier 3 — Database</text>
+  <line x1="220" y1="60" x2="268" y2="60" stroke="#64748b" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="430" y1="60" x2="478" y2="60" stroke="#64748b" stroke-width="1.5"/>
+  <!-- benefits -->
+  <text x="60"  y="130" fill="#6ee7b7" font-family="monospace" font-size="9">✓ Scalability</text>
+  <text x="60"  y="148" fill="#6ee7b7" font-family="monospace" font-size="9">✓ Security isolation</text>
+  <text x="60"  y="166" fill="#6ee7b7" font-family="monospace" font-size="9">✓ Maintainability</text>
+  <text x="300" y="130" fill="#6ee7b7" font-family="monospace" font-size="9">✓ Separation of concerns</text>
+  <text x="300" y="148" fill="#6ee7b7" font-family="monospace" font-size="9">✓ Independent deployment</text>
+  <text x="300" y="166" fill="#6ee7b7" font-family="monospace" font-size="9">✓ Load distribution</text>
+  <text x="350" y="205" text-anchor="middle" fill="#64748b" font-family="monospace" font-size="9">Three-Tier Architecture</text>
+</svg>
+          </div>
+          <p class="img-caption">Three-tier architecture: Presentation → Application → Data tiers</p>
+          <h3>What is Multitier Architecture?</h3><p>Multitier architecture divides an application into separate tiers (layers), each responsible for a specific function. The most common is the three-tier model: Presentation (UI), Application (business logic), and Data (database). Each tier communicates only with adjacent tiers, providing separation of concerns.</p><h3>Tier 1 — Presentation Layer</h3><p>The presentation tier is the user interface — what the user sees and interacts with. In web applications this is the browser rendering HTML, CSS, and JavaScript. This tier sends user actions to the application tier and displays results. It contains no business logic.</p><h3>Tier 2 — Application (Logic) Layer</h3><p>The application tier (also called business logic or middle tier) processes requests from the presentation layer, applies business rules, makes decisions, and coordinates operations between the presentation and data tiers. This layer runs on application servers (Node.js, Django, Spring Boot, etc.).</p><h3>Tier 3 — Data Layer</h3><p>The data tier manages persistent storage and retrieval. It consists of database servers (MySQL, PostgreSQL, MongoDB, Oracle) and the logic to access them. By isolating data access, this tier can be scaled, backed up, and secured independently of the other tiers.</p><h3>Benefits and Challenges</h3><p>Benefits include scalability (scale each tier independently), security (the database is never exposed to the internet), maintainability (change one tier without affecting others), and flexibility (swap out a database without rewriting the UI). Challenges include increased complexity, network latency between tiers, and the need for careful API design between layers.</p>
+          <div class="tags"><span class="tag tag-blue">3-Tier</span><span class="tag tag-purple">Presentation</span><span class="tag tag-blue">Business Logic</span><span class="tag tag-amber">Data Tier</span></div>
+        </div>
+      </div>
+      <footer>&copy; 2024 Internet Terminology Reference &nbsp;·&nbsp; <a href="../index.html" style="color:var(--accent);text-decoration:none;">← Back to All Terms</a></footer>
+    </div>
+  </div>
+  <script src="../nav.js"></script>
+</body>
+</html>
